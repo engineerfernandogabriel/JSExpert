@@ -12,8 +12,9 @@ class Util{
     static unFormatCurrency(value){
         /*
             Descrição da regex:
-                /D/ --> retira os dígitos
-                g --> caso os dígitos ocorram em sequência ele apaga também
+                \D --> retira os dígitos
+                g --> indica que a correspondência deve ocorrer globalmente em toda a string. 
+                    Se remover o modificador g da expressão regular /\D/, a correspondência será feita apenas com o primeiro caractere não numérico encontrado na string
                 /100 --> divisão por 100 no final é para voltar a vírgula na casa dos centavos        
         */
 
