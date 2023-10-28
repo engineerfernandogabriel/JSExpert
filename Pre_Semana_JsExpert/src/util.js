@@ -1,7 +1,8 @@
 class Util{
-    static #defaultFormat = Intl.NumberFormat("pt-br", {
+    static #defaultFormat = Intl.NumberFormat("pt-Br", {
         currency: "BRL",
         sytle: "currency",
+        minimumFractionDigits: 2
     })
 
     static formatCurrency(value){

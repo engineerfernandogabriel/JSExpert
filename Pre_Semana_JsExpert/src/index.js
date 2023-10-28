@@ -35,16 +35,16 @@ Date.prototype.getFullYear = () => CURRENT_YEAR
 
 {
     const manager = new Manager({
-        name:"Dr. Octopus",
+        name:"May",
         age: 45,
-        gender: "male"
+        gender: "female"
     }) 
 
-    assert.deepStrictEqual(manager.name, "Mr. Dr. Octopus")
+    assert.deepStrictEqual(manager.name, "Ms. May")
     assert.deepStrictEqual(manager.age, undefined)
     assert.deepStrictEqual(manager.gender, undefined)
     assert.deepStrictEqual(manager.grossPay, Util.formatCurrency(5000.40))
-    assert.deepStrictEqual(manager.bonuses, Util.formatCurrency(2000.00))
+    assert.deepStrictEqual(manager.bonuses, Util.formatCurrency(2000))
     assert.deepStrictEqual(manager.netPay, Util.formatCurrency(6000.32))
 
     console.log ('\n ---- manager ---- ')
